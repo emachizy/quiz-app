@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <section>
+      <form action="login.php" method="post">
+        <h1>Welcome to ObviousQuiz</h1>
+        <p>
+          Test your knowledge with questions from general interest and
+          contemplorary topics.
+        </p>
+        <!-- <label for="username">Username</label> -->
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+        />
+        <input type="text" name="email" id="email" placeholder="email" />
+        <!-- <label for="password">Password</label> -->
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <p>
+          By clicking accept and sign up, you agree to ObviousQuiz
+          <strong>User Agreement, Privacy Policy</strong> and
+          <strong>Cookie Policy</strong>
+        </p>
+        <button type="submit">
+          <a href="welcome.html">Accept and Sign Up</a>
+        </button>
+      </form>
+      <div>
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </section>
+    <script defer src="script.js"></script>
+  </body>
+</html>
