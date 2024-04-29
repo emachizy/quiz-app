@@ -8,49 +8,26 @@
     <link rel="stylesheet" href="../styles/game.css" />
   </head>
   <body>
+    <nav>
+      <a href="../index.html" class="logo">ObviousQuiz</a>
+      <a href="./login.html" class="logout">Log Out</a>
+    </nav>
     <section class="wrap">
       <div class="container">
-        <h1>
+        <div class="question">
           <h1>Question</h1>
-        </h1>
-        <p>Press play to continue</p>
-        <a href="game.html">Play</a>
+        </div>
       </div>
       <div class="left">
-        <div class="link">
-          <a href="login.html">Log Out</a>
-        </div>
-
         <div class="answers">
-          <form action="">
-            <div>
-                <label for="answer">Answer</label>
-              <input type="radio" name="answer" id="answer" value="answer" />
-              
-            </div>
-            <div>
-              <label for="answer">Answer</label>
-              <input type="radio" name="answer" id="answer" value="answer" />
-            </div>
-            <div>
-              <label for="answer">Answer</label>
-              <input type="radio" name="answer" id="answer" value="answer" />
-            </div>
-            <div>
-              <label for="answer">Answer</label>
-              <input type="radio" name="answer" id="answer" value="answer" />
-            </div>
-            <div>
-              <label for="answer">Answer</label>
-              <input type="radio" name="answer" id="answer" value="answer" />
-            </div>
-           
-              <button type="submit" class="btn">Next</button>
-            
-          </form>
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
+        <button type="submit" id="next-btn">Next</button>
       </div>
     </section>
-    <script defer src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

@@ -10,14 +10,27 @@ body {
   overflow: hidden;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .wrap {
   display: flex;
   margin: 60px;
 }
 
-
-
-.wrap .container{
+.wrap .container {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -35,42 +48,63 @@ body {
 }
 
 .container p {
-    text-align: left;
-
+  text-align: left;
 }
 
 .wrap .link {
-    width: 20%;
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    margin-left: -20px;
-    padding: 10px;
-    background: rgba(2, 6, 10, 0.2);
-  
-    border-radius: 15px;
-  }
-   .link>a {
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .container a {
+  width: 20%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-left: -20px;
+  padding: 10px;
+  background: rgba(2, 6, 10, 0.2);
+
+  border-radius: 15px;
+}
+.link > a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container a {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(144, 192, 242);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.container button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .wrap {
     width: 100%;
-    padding: 5px;
-    margin-top: 10px;
-    border: none;
-    outline: none;
-    background-color: rgb(144, 192, 242);
-    color: #fff;
-    cursor: pointer;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .wrap .container {
+    width: 90%;
+    margin: auto;
     text-align: center;
-    text-decoration: none;
-    border-radius: 15px;
   }
-  
-  .container button a {
-    color: #fff;
-    text-decoration: none;
+
+  .container p {
+    text-align: center;
   }
+
+  .link {
+    width: 100%;
+  }
+}
